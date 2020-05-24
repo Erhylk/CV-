@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>Portofolio Online</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- mengambil CSS Eksternal -->
+		<link href="assets/css/Education.css" rel="stylesheet"  >
+	</head>
+	<body >
+			<section>
+				 <nav >
+					 <div class="toggle">
+						 <button onclick="menu_open()" class="tombol tombol-navigasi">Menu</button>
+					 </div>
+					 <ul style="padding-top:20px;" id="menu-list"  >
+                        <li><a href="index.html">Profile</a></li>
+						 <li><a href="Education.html">Education</a></li>
+					 	 <li><a href="Training.html">Training</a></li>
+					 	 <li><a href="Skills.html">Skills</a></li>
+					 </ul>
+				 </nav>
+				 <div class="sosmed">
+					 <div class="isi-sosmed">
+						<a href="https://api.whatsapp.com/send?phone=6282398233474&text=Assalamualaikum" target="_blank"><img src="./assets/images/wa2.png"></a>
+						<a href="https://www.instagram.com/reskidwiputriii/" target="_blank"><img src="./assets/images/ig.png"> </a>
+						<a href="mailto:reskidwiputri25@gmail.com" target="_blank"><img src="./assets/images/gmail.png"></a>
+						<a href="https://www.facebook.com/ReskiDwiPutri" target="_blank"><img style="width:38px;" src="./assets/images/fb.png"></a>
+					 </div>
+				 </div>
+
+				 <div class="wrapper-paper">
+					<div class="paper">
+						<p class="riwayat">Riwayat Pelatihan </p>	
+
+						<!-- <p class="kop">Pendidikan Sekolah Dasar</p> -->
+						<p class="isi">Reski Dwi Putri selama menempuh pendidikan juga mengikuti pelatihan-pelatihan selama beberapa bulan yang dimulai sejak menempuh pendidikan di Sekolah Menengah Atas. Awal masuk sekolah menengah atas, mengikuti pelatihan jiwa kepemimpinan selama satu minggu pada kegiatan <i class="penting">LDK (Latihan Dasar Kepemimpinan)</i> untuk membina diri memiliki jiwa berani dan bertanggung jawab. Kegiatan pelatihan ini dilaksanakan pada tahun 2016 yang hasilnya saya dapat bergabung sebagai salah satu anggota dari organisasi intra sekolah. </p>
+
+						<p class="isi">Selanjutnya mengikuti <i class="penting">LPBB (Latihan Peraturan Baris Berbaris)</i> selama satu bulan yang dipimpin oleh beberapa komando militer. Pelatihan ini diikuti karena merupakan salah satu anggota dari Paskibraka yang bertugas dalam upacara memperingati hari kemerdekaan republik Indonesia yang ke-71 dan 72. Selain melatih diri dalam bari sberbaris, pelatihan ini juga membina diri menjadi sesorang yang disiplin dan tegas. </p>
+							
+						<p class="isi"> Mengikuti pelatihan <i class="penting">BALANCE</i> selama satu minggu di fakultas selama menjadi seorang mahasiswa baru dengan mengenalkan diri pada lingkungan kampus dan dapat mengenal diri sendiri dengan baik dengan kata lain pelatihan ini membina agar dapat berinteraksi dengan lingkungan yang baru. Pelatihan lainnya yang diikuti selama satu minggu pada masa aktif perkuliahan dengan pelatihan <i class="penting">KEWIRAUSAHAAN</i> yang membina diri menjadi orang yang sukses dalam mendirikan suatu usaha yang mandiri. </p>
+					</div>
+				  </div>
+
+
+	       </div>
+				 <div id="aboutme">
+				 </div>
+				<!-- Start SVG Curve -->
+				<svg  id="curve"
+					   viewBox="0 0 1400 214.953"
+					 xml:space="preserve">
+				<path style="opacity:1;fill:;" d="M0,139.29C207.803,40.048,277.683-60.968,472.864,45.364
+					c195.181,106.331,346.987,163.042,481.928,77.975c134.939-85.065,337.348-34.515,437.348,41.225c100,75.743,7.861,6.627,7.861,6.627
+					v73.387H0V139.29z"/>
+				</svg>
+				<!-- End SVG Curve -->
+			</section>
+		<div id="wrapper">
+			<section   class="sec2" >
+	      <div class="content">
+					
+					
+	      </div>
+
+			</section>
+
+
+		<script type="text/javascript">
+			function menu_open() {
+				let menu_list = document.getElementById('menu-list');
+				let tombol_navigasi = document.getElementsByClassName('tombol-navigasi')[0];
+				menu_list.className = " tampilkan";
+				tombol_navigasi.setAttribute('onclick', 'menu_close()');
+			}
+
+			function menu_close() {
+				let menu_list = document.getElementById('menu-list');
+				let tombol_navigasi = document.getElementsByClassName('tombol-navigasi')[0];
+				menu_list.className = " hidden";
+				tombol_navigasi.setAttribute('onclick', 'menu_open()');
+			}
+		</script>
+	</body>
+</html>

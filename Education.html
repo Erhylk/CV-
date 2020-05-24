@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>Portofolio Online</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- mengambil CSS Eksternal -->
+		<link href="assets/css/Education.css" rel="stylesheet"  >
+	</head>
+	<body >
+			<section>
+				 <nav >
+					 <div class="toggle">
+						 <button onclick="menu_open()" class="tombol tombol-navigasi">Menu</button>
+					 </div>
+					 <ul style="padding-top:20px;" id="menu-list"  >
+                        <li><a href="index.html">Profile</a></li>
+						 <li><a href="Education.html">Education</a></li>
+                         <li><a href="Training.html">Training</a></li>
+                         <li><a href="Skills.html">Skills</a></li>
+					 </ul>
+				 </nav>
+				 <div class="sosmed">
+					 <div class="isi-sosmed">
+						<a href="https://api.whatsapp.com/send?phone=6282398233474&text=Assalamualaikum" target="_blank"><img src="./assets/images/wa2.png"></a>
+						<a href="https://www.instagram.com/reskidwiputriii/" target="_blank"><img src="./assets/images/ig.png"> </a>
+						<a href="mailto:reskidwiputri25@gmail.com" target="_blank"><img src="./assets/images/gmail.png"></a>
+						<a href="https://www.facebook.com/ReskiDwiPutri" target="_blank"><img style="width:38px;" src="./assets/images/fb.png"></a>
+					 </div>
+				 </div>
+				 
+				 <div class="wrapper-paper">
+					<div class="paper">
+						
+						
+						<p class="riwayat">Riwayat Pendidikan </p>
+
+						<img class="riwayatp" src="./assets/images/kiki2.jpg"/>
+
+						<p class="kop">Pendidikan Sekolah Dasar</p>
+						<p class="isi">Reski Dwi Putri menempuh pendidikan di Sekolah Dasar pada umur 7 tahun dikelas 1. Bersama dengan dua orang teman kecilnya, mereka didaftarkan untuk sekolah di tempat yang sama yaitu SD Negeri 59 Tanete yang berada tidak jauh dari tempat tinggal mereka. Masuk Sekolah dasar pada tahun 2008 dengan mengambil jalur umum. Selama menempuh pendidikan sekolah dasar, bermain bersama dengan teman adalah satu hal yang terpenting.</p>
+
+						<p class="kop">Pendidikan Sekolah Menengah Pertama</p>
+						<p class="isi">Reski Dwi Putri menempuh pendidikan dijenjang yang lebih tinggi setelah lulus dari sekolah dasar. Menempuh pendidikan di Sekolah Menengah Pertama juga bersama dengan temannya melalui jalur umum di SMP Negeri 14 Bulukumba pada tahun 2013. Bersekolah selama tiga tahun lamanya di Sekolah Menengah Pertama ini dan mulai mengikuti beberapa kegiatan sekolah seperti baris berbaris.</p>
+
+						<p class="kop">Pendidikan Sekolah Menengah Atas</p>
+						<p class="isi">Setelah menempuh pendidikan selama tiga tahun di sekolah menengah pertama, Reski Dwi Putri melanjutkan pendidikannya di Sekolah Menengah Atas melalui jalur khusus yaitu jalur bagi siswa yang mendapatkan prestasi di dalam kelas di SMA Negeri 2 Bulukumba pada tahun 2016 tepatnya berada di Jalan Kemakmuran yang tidak jauh dari tempat tinggalnya. Menempuh pendidikan di sekolah menengah atas juga selama tiga tahun dengan mulai mengembangkan minat dan bakat serta mengikuti kegiatan ekstrakuliker di sekolah.</p>
+
+						<p class="kop">Pendidikan Perguruan Tinggi</p>
+						<p class="isi">Reski Dwi Putri mendaftar ke jenjang pendidikan yang lebih tinggi lagi setelah menempuh pendidikan di sekolah menengah atas di Perguruan Tinggi. Mendaftarkan diri pada PTN yang diminati melalui jalur SNMPTN di Unhas namun Hasilnya ia tidak lolos melalui jalur tersebut sehingga mendaftar kembali melalui jalur SPAN PTKIN, UMPTKIN dan UMMPTKIN namun kembali tidak lulus pada jalur tersebut. Dengan tidak putus asa maka kembali mendaftarkan diri pada jalur SBMPTN dan akhirnya bisa lolos melalui jalur tersebut dengan Prodi Agribisnis di Fakultas Pertanian. Mengikuti tahap pembelajaran di jenjang perguruan tinggi tahun 2019 dan merupakan mahasiswa aktif sekarang ini.</p>
+					</div>
+				  </div>
+
+	       </div>
+				 <div id="aboutme">
+				 </div>
+				<!-- Start SVG Curve -->
+				<svg  id="curve"
+					   viewBox="0 0 1400 214.953"
+					 xml:space="preserve">
+				<path style="opacity:1;fill:;" d="M0,139.29C207.803,40.048,277.683-60.968,472.864,45.364
+					c195.181,106.331,346.987,163.042,481.928,77.975c134.939-85.065,337.348-34.515,437.348,41.225c100,75.743,7.861,6.627,7.861,6.627
+					v73.387H0V139.29z"/>
+				</svg>
+				<!-- End SVG Curve -->
+			</section> 
+			
+		<div id="wrapper">
+			<section   class="sec2" >
+	      <div class="content">
+					<div >
+	          
+	          </div>
+					</div>
+	      </div>
+
+			</section>
+
+
+		<script type="text/javascript">
+			function menu_open() {
+				let menu_list = document.getElementById('menu-list');
+				let tombol_navigasi = document.getElementsByClassName('tombol-navigasi')[0];
+				menu_list.className = " tampilkan";
+				tombol_navigasi.setAttribute('onclick', 'menu_close()');
+			}
+
+			function menu_close() {
+				let menu_list = document.getElementById('menu-list');
+				let tombol_navigasi = document.getElementsByClassName('tombol-navigasi')[0];
+				menu_list.className = " hidden";
+				tombol_navigasi.setAttribute('onclick', 'menu_open()');
+			}
+		</script>
+	</body>
+</html>
